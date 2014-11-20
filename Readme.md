@@ -6,7 +6,7 @@ For debug purposes you may want to view the values of properties and unserialize
 
 ## License
 
-This is free software and it is provided under MIT license, that is distributed with this package.
+This is free software and it is provided under MIT license that is distributed with this package.
 
 ## Contribution & Support
 
