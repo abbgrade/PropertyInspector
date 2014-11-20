@@ -1,8 +1,8 @@
 # Property Inspector
 
-Property Inspector is a improved *DefaultInspector* for the *Unity3d* game engine. It is tested with *Unity 4* and may work with older versions.
+*PropertyInspector* is a improved *DefaultInspector* for the [*Unity3d* game engine](http://unity3d.com). It is tested with *Unity 4* and may work with older versions.
 
-For debug purposes you may want to view the values of of properties of unserialized fields of your *MonoBehavior*s.
+For debug purposes you may want to view the values of of properties of unserialized fields of your *MonoBehaviors*.
 
 ## License
 

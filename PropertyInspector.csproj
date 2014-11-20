@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{104A9173-3029-4779-8FD4-E8DBD13F9E7D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>PropertyInspector</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>PropertyInspector</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEditor">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Unity\Editor\Data\Managed\UnityEditor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Unity\Editor\Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\FETCH_HEAD" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\logs\refs\remotes\origin\master" />
+    <None Include=".git\objects\12\5b48398f08072e19672abdc83edaa2d258430a" />
+    <None Include=".git\objects\16\3620ceabfb8f6bf7c3cedf8d57e6697040baa5" />
+    <None Include=".git\objects\16\3dee1f972e1a4efc3a1bc284cf18441907dab0" />
+    <None Include=".git\objects\16\c44ffed7655ef4caa27cda9090ae9f118485f5" />
+    <None Include=".git\objects\2f\d86923304f6188e9b7c6dfc9e7a1880ae20764" />
+    <None Include=".git\objects\2f\ea4f34d3d75760fa91abb0868aa0e179959fe2" />
+    <None Include=".git\objects\39\76517e35cd62ae6bde9366ab86214eb0b85de7" />
+    <None Include=".git\objects\71\b7ea072bfb293f664179351be8a598f25bc9d5" />
+    <None Include=".git\objects\82\2c3f58c3748a3ed8624764ca6ef50c55910f2f" />
+    <None Include=".git\objects\9a\e14a723a5a686b21cfbd06fffcfbd6365fe199" />
+    <None Include=".git\objects\ae\72a9000ecd0fa9d11f874791325a0849f036c5" />
+    <None Include=".git\objects\c1\16a92114112263d2f8a6ea939a4f777c687ea6" />
+    <None Include=".git\objects\da\b2b2e89bc68a661e23edd9172fb620f19c0d5f" />
+    <None Include=".git\objects\df\c45cfb1e03744883d12fc22f95e5b2eda52518" />
+    <None Include=".git\objects\e8\a994c2fd06520954c237b47dd5703167d12fea" />
+    <None Include=".git\objects\f0\e3a5f3356a579454b3a44addd4ada0879eeee6" />
+    <None Include=".git\objects\f4\00c2c2cd7ceacc04b994052fa27954c9b5ec7a" />
+    <None Include=".git\objects\f8\676830371d06909e76a5c7932a140284fa472c" />
+    <None Include=".git\objects\f9\1e87f5063f1a206b1983095850900a8eb5eaeb" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".git\refs\remotes\origin\master" />
+    <None Include="License.md" />
+    <None Include="Readme.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Editor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShowInInspector.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".git\ms-persist.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\branches\" />
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\objects\pack\" />
+    <Folder Include=".git\refs\tags\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
