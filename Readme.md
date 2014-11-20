@@ -1,12 +1,18 @@
 # Property Inspector
 
-*PropertyInspector* is a improved *DefaultInspector* for the [*Unity3d* game engine](http://unity3d.com). It is tested with *Unity 4* and may work with older versions.
+*PropertyInspector* is a improved *DefaultInspector* for the [*Unity3d* game engine](http://unity3d.com). It's tested with *Unity 4* and may work with older versions.
 
-For debug purposes you may want to view the values of of properties of unserialized fields of your *MonoBehaviors*.
+For debug purposes you may want to view the values of properties and unserialized fields of your *MonoBehaviors*. With the *PropertyInspector* this is very easy.
 
 ## License
 
-This is free software and it is provided under MIT license.
+This is free software and it is provided under MIT license, that is distributed with this package.
+
+## Contribution & Support
+
+If you have a question or contribution to the *PropertyInspector* visit our [GitHub Project](https://github.com/abbgrade/PropertyInspector).
+
+To build the readme on *Windows* and *VisualStudio* you have to install [Pandoc](johnmacfarlane.net/pandoc) and [MiKTeX](http://miktex.org/).
 
 ## Installation
 
@@ -17,7 +23,8 @@ Select your local copy of "PropertyInspector.unitypackage"
 
 ### From GitHub
 
-*Instruction will follow.*
+Download the [sources](https://github.com/abbgrade/PropertyInspector/archive/master.zip) from *Github*.
+Unpack *Editor.cs* *ShowInInspector.cs* to your projects *Assets* directory.
 
 ## Usage
 
@@ -57,7 +64,3 @@ Don't forget to call *base.OnInspectorGUI* if you override *OnInspectorGUI*.
 	        }
 	    }
 	}
-
-## Contribution & Support
-
-If you have a question or contribution to the *PropertyInspector* visit our [GitHub Project](https://github.com/abbgrade/PropertyInspector).

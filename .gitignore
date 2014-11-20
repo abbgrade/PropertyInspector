@@ -1,3 +1,5 @@
 *.meta
-bin/Debug
+*.csproj.user
+*.v12.suo
+bin
 obj

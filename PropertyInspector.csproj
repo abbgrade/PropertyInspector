@@ -32,13 +32,7 @@
     <RootNamespace>PropertyInspector</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Xml" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEditor">
       <HintPath>..\..\..\..\..\Program Files (x86)\Unity\Editor\Data\Managed\UnityEditor.dll</HintPath>
       <Private>False</Private>
@@ -110,4 +104,12 @@
   <ProjectExtensions>
     <VisualStudio AllowExistingFolder="true" />
   </ProjectExtensions>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>pandoc $(ProjectDir)Readme.md -s -o $(TargetDir)Readme.pdf
+pandoc $(ProjectDir)License.md -s -o $(TargetDir)License.pdf</PostBuildEvent>
+  </PropertyGroup>
 </Project>
