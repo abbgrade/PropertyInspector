@@ -8,15 +8,9 @@ namespace PropertyInspector
     [CustomEditor(typeof(MonoBehaviour), editorForChildClasses: true)]
     public class Editor : UnityEditor.Editor
     {
-        #region Foldout States
-
-        private bool foldoutSerializedState = true;
+        #region Utils
 
         private static Dictionary<string, bool> foldoutStates = new Dictionary<string, bool>();
-
-        #endregion Foldout States
-
-        #region Utils
 
         /// <summary>
         ///     Creates recursively EditorGUI elements for an abitrary object.
